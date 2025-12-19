@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="calculate.css">
+</head>
+<body class="list">
+    <textarea id="input_number" type="text" placeholder="числа и арифметические знаки" class="input_calc"></textarea>
+
+
+
+    <table class="calculate" align="center">
+    <tr>
+    <td><button class="myButton">2</button></td>
+    <td style="padding-right:15px" ><button class="myButton">+</button></td>
+    <td><button class="myButton" id="1" onclick='one()'>1</button></td>
+    <td><button class="myButton" id="2" onclick='two()'>2</button></td>
+    <td><button class="myButton" id="3" onclick='three()'>3</button></td>
+    <td style="padding-left:15px"><button class="matSimbol" id="/" onclick='division()'>៖</button></td>
+    <td><button class="matSimbol" id="*" onclick='multiplications()'>ⅹ</button></td>
+    </tr>
+    <tr>
+    <td><button class="myButton">2</button></td>
+    <td style="padding-right:15px"><button class="myButton">+</button></td>
+    <td><button class="myButton" id="4" onclick='four()'>4</button></td>
+    <td><button class="myButton" id="5" onclick='five()'>5</button></td>
+    <td><button class="myButton" id="6" onclick='six()'>6</button></td>
+    <td style="padding-left:15px"><button class="matSimbol" id="%" onclick='procent()'>%</button></td>
+    <td><button class="matSimbol" id="()" onclick='staples()'>()</button></td>
+    </tr>
+    <tr>
+    <td><button class="myButton">2</button></td>
+    <td style="padding-right:15px"><button class="myButton">+</button></td>
+    <td><button class="myButton" id="7" onclick='seven()'>7</button></td>
+    <td><button class="myButton" id="8" onclick='eight()'>8</button></td>
+    <td><button class="myButton" id="9" onclick='nine()'>9</button></td>
+    <td style="padding-left:15px" ><button class="matSimbol" id="+" onclick='plus()'>+</button></td>
+    <td><button class="matSimbol" id="-" onclick='minus()'>一</button></td>
+    </tr>
+    <tr>
+    <td><button class="myButton">2</button></td>
+    <td  style="padding-right:15px"><button class="myButton">+</button></td>
+    <td><button class="myButton" id="backspace" onclick='backspace()'>bks</button></td>
+    <td><button class="myButton" id="0" onclick='zero()'>0</button></td>
+    <td><button class="myButton" id="click" onclick='result()'>=</button></td>
+    <td style="padding-left:15px" ><button class="matSimbol" id="," onclick='decimal()'>.</button></td>
+    <td><button class="matSimbol" id="delete" onclick='deleteResult()'>C</button></td>
+    </tr>
+    </table>
+
+
+    <script src="calculate.js"></script>
+</body>
+</html>
